@@ -1,0 +1,66 @@
+nav {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  .container {
+    .navContainer {
+      width: 100%;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Montserrat", sans-serif;
+      .logo {
+        font-size: 25px;
+        font-weight: 500;
+        :hover {
+          color: grey;
+        }
+      }
+      .threeDotMenu {
+        font-size: 30px;
+        display: none;
+      }
+      .loginButton {
+        :hover {
+          color: grey;
+        }
+        a {
+          margin-left: 15px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  nav {
+    .container {
+      // max-width: 790px;
+      // width: 90%;
+      .navContainer {
+        .threeDotMenu {
+          display: block;
+        }
+        .loginButton {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  nav {
+    .container {
+      .navContainer {
+        .logo {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

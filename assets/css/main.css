@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+}
+nav .container .navContainer {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+nav .container .navContainer .logo {
+  font-size: 25px;
+  font-weight: 500;
+}
+nav .container .navContainer .logo :hover {
+  color: grey;
+}
+nav .container .navContainer .threeDotMenu {
+  font-size: 30px;
+  display: none;
+}
+nav .container .navContainer .loginButton :hover {
+  color: grey;
+}
+nav .container .navContainer .loginButton a {
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 790px) {
+  nav .container .navContainer .threeDotMenu {
+    display: block;
+  }
+  nav .container .navContainer .loginButton {
+    display: none;
+  }
+}
+@media screen and (max-width: 568px) {
+  nav .container .navContainer .logo {
+    font-size: 15px;
+  }
+}
+header {
+  width: 100%;
+  background-image: url("../image/sun-tornado.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+header .container .headerContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+header .container .headerContainer .h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+header .container .headerContainer .button {
+  background-color: white;
+  border-radius: 40px;
+  padding: 25px 40px;
+  color: orangered;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.3s;
+}
+header .container .headerContainer .button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 992px) {
+  header .container .headerContainer .h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 420px) {
+  header .container .headerContainer .h1 {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  header .container .headerContainer .button {
+    font-size: 14px;
+    padding: 18px 25px;
+  }
+}
+footer {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 28px 0;
+}
+footer .container .footerContainer {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutRock-section {
+  padding: 30px 0;
+  width: 100%;
+  background-color: white;
+}
+.aboutRock-section .container .aboutRock-Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.aboutRock-section .container .aboutRock-Container .text {
+  width: 100%;
+  max-width: 500px;
+}
+.aboutRock-section .container .aboutRock-Container .text h4 {
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.aboutRock-section .container .aboutRock-Container .text p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.aboutRock-section .container .aboutRock-Container .photo {
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+  border-radius: 50%;
+}
+.aboutRock-section .container .aboutRock-Container .photo img {
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+  border-radius: 50%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutRock-section .container .aboutRock-Container {
+    flex-direction: column-reverse;
+  }
+  .section2 .container .aboutRock-Container {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
